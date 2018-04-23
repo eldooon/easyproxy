@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBAD5E80ABED4959D7EA78A /* Pods_easyproxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90F71CDAF4E3C00EF546457 /* Pods_easyproxy.framework */; };
 		BEBDDE8E208E8D6A00420381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBDDE8D208E8D6A00420381 /* AppDelegate.swift */; };
 		BEBDDE90208E8D6A00420381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBDDE8F208E8D6A00420381 /* ViewController.swift */; };
 		BEBDDE93208E8D6A00420381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBDDE91208E8D6A00420381 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		531842770D1C8C4914082F12 /* Pods-easyproxy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyproxy.release.xcconfig"; path = "Pods/Target Support Files/Pods-easyproxy/Pods-easyproxy.release.xcconfig"; sourceTree = "<group>"; };
+		9E6148FEDAACF4465B0AFB5F /* Pods-easyproxy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyproxy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easyproxy/Pods-easyproxy.debug.xcconfig"; sourceTree = "<group>"; };
 		BEBDDE8A208E8D6900420381 /* easyproxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyproxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBDDE8D208E8D6A00420381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEBDDE8F208E8D6A00420381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BEBDDE94208E8D6E00420381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEBDDE97208E8D6E00420381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEBDDE99208E8D6E00420381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90F71CDAF4E3C00EF546457 /* Pods_easyproxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyproxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBAD5E80ABED4959D7EA78A /* Pods_easyproxy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BC269316007E1D6F3D5D501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E6148FEDAACF4465B0AFB5F /* Pods-easyproxy.debug.xcconfig */,
+				531842770D1C8C4914082F12 /* Pods-easyproxy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8EFF5A857452D50EB1DA0C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90F71CDAF4E3C00EF546457 /* Pods_easyproxy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEBDDE81208E8D6900420381 = {
 			isa = PBXGroup;
 			children = (
 				BEBDDE8C208E8D6900420381 /* easyproxy */,
 				BEBDDE8B208E8D6900420381 /* Products */,
+				5BC269316007E1D6F3D5D501 /* Pods */,
+				A8EFF5A857452D50EB1DA0C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEBDDE9C208E8D6E00420381 /* Build configuration list for PBXNativeTarget "easyproxy" */;
 			buildPhases = (
+				3BFBBFFC562A24B0CC71F454 /* [CP] Check Pods Manifest.lock */,
 				BEBDDE86208E8D6900420381 /* Sources */,
 				BEBDDE87208E8D6900420381 /* Frameworks */,
 				BEBDDE88208E8D6900420381 /* Resources */,
+				1A959B6ACC04286269CCFA99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A959B6ACC04286269CCFA99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-easyproxy/Pods-easyproxy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easyproxy/Pods-easyproxy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BFBBFFC562A24B0CC71F454 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-easyproxy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEBDDE86208E8D6900420381 /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		BEBDDE9D208E8D6E00420381 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E6148FEDAACF4465B0AFB5F /* Pods-easyproxy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP6364VX67;
 				INFOPLIST_FILE = easyproxy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ByEldon.easyproxy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		BEBDDE9E208E8D6E00420381 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531842770D1C8C4914082F12 /* Pods-easyproxy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP6364VX67;
 				INFOPLIST_FILE = easyproxy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ByEldon.easyproxy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
